@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<title>View All</title>
+<link rel="stylesheet" href="../static/css/donationhistory.css">
+<head>
+</head>
+<body>
+<h1>Donation History</h1>
+<table border="1px">
+    <thead>
+        <tr>
+            <th>Blood Group</th>
+            <th>Unit (in ml)</th>
+            <th>Disease (if any)</th>
+            <th>Age</th>
+            <th>Date</th>
+            <th>Status</th>
+        </tr>
+    </thead>
+    {%for row in sqldata%}
+    <tr>
+        <td>{{row[0]}}</td>
+        <td>{{row[1]}}</td>
+        <td>{{row[2]}}</td>
+        <td>{{row[3]}}</td>
+        <td>{{row[4]}}</td>
+        <td>{{row[5]}}</td>
+    </tr>
+    {%endfor%}
+</table>
+</body>
+</html>

@@ -1,0 +1,25 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Login Form</title>
+        <link rel="stylesheet" href="../static/css/adminlogin.css">
+
+    </head><script src="https://kit.fontawesome.com/b99e675b6e.js"></script>
+    <body>
+        <div class="login">
+            <h1>ADMIN LOGIN</h1>
+            <form action="/admindashboard" method="post">
+                <label for="username">
+                    <i class="fa fa-user"></i>
+                </label>
+                <input type="text" name="USERNAME" placeholder="Username" id="username" required>
+                <label for="password">
+                    <i class="fa fa-lock"></i>
+                </label>
+                <input type="password" name="PASSWORD" placeholder="Password" id="password" required>
+                <div class="msg">{{ msg }}</div>
+                <input type="submit" value="Login">
+            </form>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Blood Request</title>
+	<link rel="stylesheet" href="../static/css/bloodrequest.css">
+   
+</head>
+<body>
+<div class="wrapper">
+    <div class="title">
+      BLOOD REQUEST
+    </div>
+    <form action='/blood' method="post">
+      <table>
+        <tr>
+        <td>
+          Patient Name
+        </td>
+        <td>
+          <input type="text" name="patientname">
+        </td>
+       </tr>
+       <tr></tr>
+       <tr>
+        <td>
+           Patient Age
+        </td>
+        <td>
+          <input type="text" name="patientage">
+        </td>
+       </tr>
+       <tr></tr>
+       <tr>
+        <td>
+          Reason
+        </td>
+        <td>
+          <input type="text" name="REASON">
+        </td>
+       </tr>
+       <tr></tr>
+       <tr>
+        <td>
+          Blood Group
+        </td>
+        <td>
+          <input type="text" name="bloodgroup">
+        </td>
+       </tr>
+       <tr></tr>
+       <tr>
+        <td>
+          Unit (in ml)
+        </td>
+        <td>
+          <input type="text" name="UNIT">
+        </td>
+       </tr>
+       <tr></tr>
+       <tr>
+        <td>
+          Date
+        </td>
+        <td>
+          <input type="date" name="DATE">
+        </td>
+       </tr>
+       <tr></tr>
+       <tr>
+        <td>
+        </td>
+        <td>
+          <input type="submit" value="Request">
+        </td>
+       </tr>
+       </table>
+       {{msgdata}}
+
+
+</form>
+</body>
+</html>

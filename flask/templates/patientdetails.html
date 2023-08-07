@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<title>View All</title>
+<link rel="stylesheet" href="../static/css/patientdetails.css">
+<head>
+</head>
+<body>
+<h1>Patient Details</h1>
+<table border="1px">
+    <thead>
+        <tr>
+            <th>Full Name</th>
+            <th>Username</th>
+            <th>Father Name</th>
+            <th>Mother Name</th>
+            <th>Date of Birth</th>
+            <th>Gender</th>
+            <th>Age</th>
+            <th>Blood Group</th>
+            <th>Disease</th>
+            <th>Address</th>
+            <th>City</th>
+            <th>Email ID</th>
+            <th>Mobile Number</th>
+            <th>Password</th>
+            <th>Confirm Password</th>
+            <th>Action</th>
+        </tr>
+    </thead>
+    {%for row in sqldata%}
+    <tr>
+        <td>{{row[0]}}</td>
+        <td>{{row[1]}}</td>
+        <td>{{row[2]}}</td>
+        <td>{{row[3]}}</td>
+        <td>{{row[4]}}</td>
+        <td>{{row[5]}}</td>
+        <td>{{row[6]}}</td>
+        <td>{{row[7]}}</td>
+        <td>{{row[8]}}</td>
+        <td>{{row[9]}}</td>
+        <td>{{row[10]}}</td>
+        <td>{{row[11]}}</td>
+        <td>{{row[12]}}</td>
+        <td>{{row[13]}}</td>
+        <td>{{row[14]}}</td>
+        <td class="text-right">
+            <a href="/change/" class="btn">Edit</a>
+            <a href="/drop/" class="btn">Delete</a>
+    </tr>
+    {%endfor%}
+</table>
+</body>
+</html>

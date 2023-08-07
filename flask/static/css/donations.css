@@ -1,0 +1,54 @@
+body{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color:white;
+    margin: 10px;
+    padding: 10px;
+}
+h1{
+    color:darkred;
+    text-align: center;
+}
+h2{
+    color:rebeccapurple;
+
+}
+label{
+    width: 80px;
+    font-weight: bold;
+}
+input{
+    width :200px;
+    padding : 5px;
+    border: 1 px;
+    border-radius: 4px;
+}
+input[type="submit"]
+{
+    background-color:palegreen;
+    color:midnightblue;
+    padding: 10px;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  th, td {
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid red;
+  }
+  
+  thead {
+    background-color:red;
+  }
+  
+  tr:hover {
+    background-color:sandybrown;
+  }
+  button{
+    background-color:coral;
+  }
+  button a{
+    background-color: red;
+  }

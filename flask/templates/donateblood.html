@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Donate Blood</title>
+	<link rel="stylesheet" href="../static/css/donateblood.css">
+   
+</head>
+<body>
+<div class="wrapper">
+    <div class="title">
+      DONATE BLOOD
+    </div>
+    <form action='/donate' method="post">
+      <table>
+        <tr>
+        <td>
+          Blood Group
+        </td>
+        <td>
+          <input type="text" name="bloodgroup">
+        </td>
+       </tr>
+       <tr></tr>
+       <tr>
+        <td>
+           Unit (in ml)
+        </td>
+        <td>
+          <input type="text" name="UNIT">
+        </td>
+       </tr>
+       <tr></tr>
+       <tr>
+        <td>
+          Disease (if any)
+        </td>
+        <td>
+          <input type="text" name="DISEASE">
+        </td>
+       </tr>
+       <tr></tr>
+       <tr>
+        <td>
+          Age
+        </td>
+        <td>
+          <input type="text" name="AGE">
+        </td>
+       </tr>
+       <tr></tr>
+       <tr>
+        <td>
+          Date 
+        </td>
+        <td>
+          <input type="date" name="DATE">
+        </td>
+       </tr>
+       <tr></tr>
+       <tr>
+        <td>
+        </td>
+        <td>
+          <input type="submit" value="Donate">
+        </td>
+       </tr>
+       </table>
+       {{msgdata}}
+
+
+</form>
+</body>
+</html>

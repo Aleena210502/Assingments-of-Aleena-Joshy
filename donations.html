@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<title>View All</title>
+<link rel="stylesheet" href="../static/css/donations.css">
+<head>
+<head>
+</head>
+<body>
+<h1>Donations</h1>
+<table border="1px">
+    <thead>
+        <tr>
+            <th>Blood Group</th>
+            <th>Unit (in ml)</th>
+            <th>Disease (if any)</th>
+            <th>Age</th>
+            <th>Date</th>
+            <th>Status</th>
+            <th>Action</th>
+        </tr>
+    </thead>
+    {%for row in sqldata%}
+    <tr>
+        <td>{{row[0]}}</td>
+        <td>{{row[1]}}</td>
+        <td>{{row[2]}}</td>
+        <td>{{row[3]}}</td>
+        <td>{{row[4]}}</td>
+        <td>{{row[5]}}</td>
+        <td class="text-right">
+            <button class="APPROVE">APPROVE</a> </button>
+            <button class="REJECT">REJECT</a> </button>
+        </td>
+    </tr>
+    {%endfor%}
+</table>
+</body>
+</html>

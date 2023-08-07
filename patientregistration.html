@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Donor Registration Form</title>
+	<link rel="stylesheet" href="../static/css/patientregistration.css">
+   
+</head>
+<body>
+<div class="wrapper">
+    <div class="title">
+      PATIENT REGISTRATION
+    </div>
+    <form action='/add' method="post">
+      <table>
+        <tr>
+        <td>
+          Full Name
+        </td>
+        <td>
+          <input type="text" name="fullname">
+        </td>
+       </tr>
+       <tr></tr>
+       <tr>
+        <td>
+           Username
+        </td>
+        <td>
+          <input type="text" name="USERNAME">
+        </td>
+       </tr>
+       <tr></tr>
+       <tr>
+        <td>
+          Father Name
+        </td>
+        <td>
+          <input type="text" name="fathername">
+        </td>
+       </tr>
+       <tr></tr>
+       <tr>
+        <td>
+          Mother name
+        </td>
+        <td>
+          <input type="text" name="mothername">
+        </td>
+       </tr>
+       <tr></tr>
+       <tr>
+        <td>
+          Date of Birth
+        </td>
+        <td>
+          <input type="date" name="DOB">
+        </td>
+       </tr>
+       <tr></tr>
+       <tr>
+        <td>
+          Gender
+        </td>
+        <td>
+          <input type="text" name="GENDER">
+        </td>
+       </tr>
+       <tr></tr>
+       <tr>
+        <td>
+          Age
+        </td>
+        <td>
+          <input type="text" name="AGE">
+        </td>
+       </tr>
+       <tr></tr>
+       <tr>
+        <td>
+          Blood Group
+        </td>
+        <td>
+          <input type="text" name="bloodgroup">
+        </td>
+       </tr>
+       <tr></tr>
+       <tr>
+        <td>
+          Disease
+        </td>
+        <td>
+          <input type="text" name="DISEASE">
+        </td>
+       </tr>
+       <tr></tr>
+       <tr>
+        <td>
+          Address
+        </td>
+        <td>
+          <input type="text" name="ADDRESS">
+        </td>
+       </tr>
+       <tr></tr>
+       <tr>
+        <td>
+          City
+        </td>
+        <td>
+          <input type="text" name="CITY">
+        </td>
+       </tr>
+       <tr></tr>
+       <tr>
+        <td>
+          Email ID
+        </td>
+        <td>
+          <input type="text" name="EMAIL">
+        </td>
+       </tr>
+       <tr></tr>
+       <tr>
+        <td>
+          Mobile Number
+        </td>
+        <td>
+          <input type="text" name="mobileno">
+        </td>
+       </tr>
+       <tr></tr>
+       <tr>
+        <td>
+          Password
+        </td>
+        <td>
+          <input type="password" name="PASSWORD">
+        </td>
+       </tr>
+       <tr></tr>
+       <tr>
+        <td>
+          Confirm Password
+        </td>
+        <td>
+          <input type="password" name="confirmpassword">
+        </td>
+       </tr>
+       <tr></tr>
+
+       <p> 
+
+       </p>
+       <tr>
+        <td>
+          <class="check">
+          <input type="checkbox">
+          <span class="checkmark"></span>Agreed to terms and conditions
+        </td>
+        <td>
+        </td>
+       </tr>
+       <tr></tr>
+       <tr>
+        <td>
+        </td>
+        <td>
+          <input type="submit" value="Register">
+        </td>
+       </tr>
+       </table>
+       {{msgdata}}
+
+
+</form>
+</body>
+</html>
